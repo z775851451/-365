@@ -1,0 +1,22 @@
+path : './每日/excel/'
+
+database_c :
+ host : "127.0.0.1"
+ port : 3306
+ user : "root"
+ password : "12345678" 
+ database : "test"
+ charset : "utf8"
+
+sql :
+ 苏宁回款时间 : 
+ 物流费 : 
+ vc结算单 : 
+ 京东 : "DELETE FROM `京东` WHERE `下单时间` BETWEEN '2021-09-20' AND '2021-12-20'"
+ 京东退货单 : "DELETE FROM `京东` WHERE `制单日期` BETWEEN '2021-09-20' AND '2021-12-20'"
+#  苏宁报表 : "DELETE FROM `京东` WHERE `订单下单时间` BETWEEN '2021-09-20' AND '2021-12-20'"
+ 旺店通 : "DELETE FROM `京东` WHERE `交易时间` BETWEEN '2021-09-20' AND '2021-12-20'"
+ 小柚旺店通销售管理 : "DELETE FROM `京东` WHERE `日期` BETWEEN '2021-09-20' AND '2021-12-20'"
+#  自采单流水账 : 
+#  自采销售单流水账 : 
+ 猫宁销售订单列表 : "DELETE FROM `京东` WHERE `分销单创建时间` BETWEEN '2021-09-20' AND '2021-12-20'"
